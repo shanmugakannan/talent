@@ -4,8 +4,8 @@
   display: inline-block;
   margin: 3px;
   position: relative;
-  width: 300px;
-  height:320px;
+  width: 260px;
+  height:155px;
   padding:15px;
   font-size: 13px;
   font-family:arial;
@@ -26,25 +26,25 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width:620px;
+  width:535px;
 }
 
 .select-item-class{
-  padding:10px;
+  padding:3px;
 }
 
 .select-icon-class{
-  padding:3px;
-  font-size:25px;
+  font-size:15px;
   float:left;
-  margin-right:10px;
+  margin-right:5px;
 }
 
 .select-text-class{
-  line-height: 35px;
+  line-height: 18px;
 }
 
 .select-header-class{
-  font-size: 25px;
+  font-size: 15px;
+  font-weight:bold;
   color: cadetblue;
 }

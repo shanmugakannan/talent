@@ -12,10 +12,10 @@ export class RateTalentComponent implements OnInit {
   constructor() { 
     this.items = [
                    {"title":"Promotion",
-                            "values":[{"text":"Due in less than 6 months","icon":"glyphicon glyphicon-hourglass"},
+                            "values":[{"text":"Due in less than 6 months","icon":"fa fa-hourglass-half"},
                                       {"text":"Due in 6 to 12 months","icon":"glyphicon glyphicon-time"},
-                                      {"text":"Due in 12 to 18 months","icon":"glyphicon glyphicon-time"},
-                                      {"text":"After 18 months only","icon":"glyphicon glyphicon-time"}]},
+                                      {"text":"Due in 12 to 18 months","icon":"fa fa-clock-o"},
+                                      {"text":"After 18 months only","icon":"fa fa-hourglass"}]},
                    {"title":"Training",
                             "values":[{"text":"Technical training","icon":"glyphicon glyphicon-cog"},
                                       {"text":"Behavioural training","icon":"glyphicon glyphicon-eye-open"},
@@ -27,9 +27,9 @@ export class RateTalentComponent implements OnInit {
                                       {"text":"Include in external tech forums","icon":"glyphicon glyphicon-link"},
                                       {"text":"others","icon":"glyphicon glyphicon-th-list"}]},
                    {"title":"Others",
-                            "values":[{"text":"Move to different team in same BU","icon":"glyphicon glyphicon-retweet"},
-                                      {"text":"Move to different BU","icon":"glyphicon glyphicon-log-in"},
-                                      {"text":"Stretch assignment in different BU","icon":"glyphicon glyphicon-resize-full"}]}
+                            "values":[{"text":"Move to different team in same BU","icon":"fa fa-random"},
+                                      {"text":"Move to different BU","icon":"fa fa-exchange"},
+                                      {"text":"Stretch assignment in different BU","icon":"fa fa-arrows-h"}]}
                  ]
                 }
 
