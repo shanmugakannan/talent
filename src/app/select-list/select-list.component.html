@@ -1,0 +1,12 @@
+<!--Dropdownlist-->
+<div class="select-container">
+<div class="select-master select-list" *ngFor="let list of lists">
+<!--List Header-->
+<div class="select-header-class">{{list.title}}</div>
+<!--List Items-->
+<div select-item *ngFor="let value of list.values" class="select-item-class">
+    <div class="{{value.icon}} select-icon-class"></div>
+    <div class= "select-text-class">{{value.text}}</div>
+</div>
+</div>
+</div>
