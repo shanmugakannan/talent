@@ -8,6 +8,11 @@ import { ListItem } from '../select-list/select-list.model';
 })
 export class TimelineComponent implements OnInit {
   items : ListItem[];
+  year:Date;
+  yearText : number;
+  monthText: string;
+  rating:string;
+  ratingSummary:string;
   constructor() { 
     this.items = [
                    {"title":"Promotion",
@@ -30,6 +35,14 @@ export class TimelineComponent implements OnInit {
                                       {"text":"Move to different BU","icon":"fa fa-exchange"},
                                       {"text":"Stretch assignment in different BU","icon":"fa fa-arrows-h"}]}
                  ]
+
+                 var months : string[] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+                 this.year = new Date();
+                 var monthNumber = this.year.getMonth();
+                 this.monthText = months[monthNumber];
+                 this.yearText =this.year.getFullYear();
+                 this.rating = "Amongst the best performance";
+                 this.ratingSummary ="Performed performance tuning of query.Volunteered for Hackathons.Won spot Light award.Contributed.Performed performance tuning of query.Volunteer to PaypalGives.Volunteered for Hackathons.Won spot Light award";
                 }
 
   ngOnInit() {
