@@ -5,13 +5,12 @@
 
 .concentric
 {
-    height: 20px;
-    width: 20px;
+    height: 8px;
+    width: 8px;
     background-color: darkorange;
     border: 4px solid white;
-    box-shadow: 0px 0px 0px 8px darkorange;
+    box-shadow: 0px 0px 0px 7px darkorange;
     border-radius: 50%;
-    margin-top: -8px;
 }
 .darkgrey{
     height: 9px;
@@ -36,4 +35,31 @@
     border: 4px solid white;
     box-shadow: 0px 0px 0px 3px darkorange;
     border-radius: 50%;
+}
+
+.rectangle{
+    border: solid thick darkorange;
+    border-width: 3px;
+    margin: 3px;
+    width: 352px;
+    margin-left: 95px;
+    margin-bottom: 6px;
+    height: 114px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.timeline-header{
+    border: solid thick darkorange;
+    border-width: 3px;
+    width: 228px;
+    margin-left: 79px;
+    border-radius: 21px;
+    margin-bottom: -3px;
+    height: 39px;
+}
+
+ul{
+    list-style: none;
 }
