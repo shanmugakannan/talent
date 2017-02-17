@@ -8,11 +8,12 @@ import { SelectListComponent } from './select-list/select-list.component';
 import { SelectItemDirective } from './select-list/select-item.directive';
 import { RateTalentComponent } from './rate-talent/rate-talent.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,SelectListComponent,SelectItemDirective, RateTalentComponent,TimelineComponent
+    AppComponent,SelectListComponent,SelectItemDirective,RateTalentComponent,TimelineComponent,ResourceDetailComponent
   ],
   imports: [
     BrowserModule,
