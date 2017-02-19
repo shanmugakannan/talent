@@ -9,11 +9,12 @@ import { SelectItemDirective } from './select-list/select-item.directive';
 import { RateTalentComponent } from './rate-talent/rate-talent.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
+import { ActionItemComponent } from './action-item/action-item.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,SelectListComponent,SelectItemDirective,RateTalentComponent,TimelineComponent,ResourceDetailComponent
+    AppComponent,SelectListComponent,SelectItemDirective,RateTalentComponent,TimelineComponent,ResourceDetailComponent, ActionItemComponent
   ],
   imports: [
     BrowserModule,

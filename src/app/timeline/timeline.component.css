@@ -99,6 +99,5 @@ ul{
 }
 
 .rating-summary::-webkit-scrollbar { 
-  /* This is the magic bit */
   display: none;
 }
