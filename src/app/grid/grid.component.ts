@@ -1,9 +1,15 @@
-import { Component, OnInit,
+import { Component, 
+         OnInit,
          trigger,
          state,
          style,
          transition,
-         animate } from '@angular/core';
+         animate,
+         AfterViewInit, 
+         ViewChild 
+        } 
+from '@angular/core';
+import { DatatableComponent } from './data-table.component';
 import { ApiService } from "../services/api.service";
 import { GetEmployeeRatingService } from "../services/get-employee-rating.service";
 
@@ -14,9 +20,7 @@ import { GetEmployeeRatingService } from "../services/get-employee-rating.servic
    animations: [
     trigger('pageState', [
       state('view', style({
-        width: "100%",
-        margin: "2%",
-        textalign: "left"
+        width: "95%"
       })),
       state('edit',   style({
         width: "25%"
@@ -26,7 +30,11 @@ import { GetEmployeeRatingService } from "../services/get-employee-rating.servic
     ])
   ]
 })
-export class GridComponent implements OnInit {
+
+export class GridComponent implements AfterViewInit  {
+  @ViewChild(DatatableComponent)
+  private grid : DatatableComponent;
+
   pageState='view';
   Data : any = [];
   constructor(private dataservice :GetEmployeeRatingService){
@@ -34,16 +42,28 @@ export class GridComponent implements OnInit {
         .subscribe(res => this.Data = res.json())
   }
 
- private changState(state:string){
+private changState(state:string){
       this.pageState = state;
   }
 
 OnRateEmployee(id:string)
 {
   this.changState('edit');
+  if(this.pageState == "edit"){
+    this.grid.columns.forEach(element => {
+     
+     if(element.value == "emp_no" || element.value == "emp_name"){
+        element.visible = true;
+     }
+     else{
+       element.visible = false;
+     }
+    });
+      
+  }
 }
 
-ngOnInit() {
-}
+ngAfterViewInit() {  
+  }
 
 }

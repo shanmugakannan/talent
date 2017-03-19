@@ -1,11 +1,11 @@
 <div [@pageState]="pageState">
 <datatable [dataset]=Data (ratebtnClick)="OnRateEmployee($event)">
-  <column [visible]="true" [value]="'emp_no'" [header]="'Emp ID'"></column>
-  <column [visible]="true" [value]="'emp_name'" [header]="'Emp Name'"></column>
-  <column [visible]="true" [value]="'job_grade'" [header]="'Job Grade'"></column>
-  <column [visible]="true" [value]="'tenure'" [header]="'Tenure in PayPal'"></column>
-  <column [visible]="true" [value]="'rating_cur'" [header]="'Current Rating'"></column>
-  <column [visible]="true" [value]="'rating_prev'" [header]="'Previous Rating'"></column>
-  <column [visible]="true" [value]="'is_top'" [header]="'Top Talent'"></column>		 
+  <column [value]="'emp_no'" [header]="'Emp ID'"></column>
+  <column [value]="'emp_name'" [header]="'Emp Name'"></column>
+  <column [value]="'job_grade'" [header]="'Job Grade'"></column>
+  <column [value]="'tenure'" [header]="'Tenure in PayPal'"></column>
+  <column [value]="'rating_cur'" [header]="'Current Rating'"></column>
+  <column [value]="'rating_prev'" [header]="'Previous Rating'"></column>
+  <column [value]="'is_top'" [header]="'Top Talent'"></column>		 
 </datatable>
 </div>
