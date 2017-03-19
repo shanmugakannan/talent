@@ -1,0 +1,19 @@
+<div class="grid-container">
+  <div class="grid">
+      <table class="table">
+        <thead>
+        <tr><th *ngFor="let column of columns"> <template [ngIf]="column.visible">{{column.header}}</template></th></tr>
+        </thead>
+        <tbody *ngFor="let row of getData()">
+        <tr>
+          <td *ngFor="let column of columns">
+            <template [ngIf]="column.visible">{{row[column.value]}}</template>
+          </td>
+          <td>
+            <button class="btn btn-primary" (click)="OnratebtnClick(row['corp_id'])">Rate</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+  </div>
+</div>

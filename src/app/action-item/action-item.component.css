@@ -32,7 +32,7 @@
 .actionitem-comment{
     font-size: small;
     font-family: cursive;
-    width: 322px;
+    width: 270px;
     padding-top:12px;
     word-break: break-word;
     overflow-y: scroll;
@@ -45,9 +45,9 @@
 }
 
 .actionitem-container { 
-    width: 365px;
+    width: 280px;
     height: 147px;
-    padding: 20px;
+    padding: 7px;
     font-size: 13px;
     font-family: arial;
     background: #fff;

@@ -1,0 +1,20 @@
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+
+.grid-container{
+  width:100%;
+  align-items: center;
+}
+ 
+.grid{
+  font-size: 16px;
+  position: fixed;
+  height: 440px;
+  width:95%;
+  overflow-y:auto;
+  margin-top:40px
+}

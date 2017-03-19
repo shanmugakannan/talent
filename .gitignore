@@ -31,3 +31,12 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+*.md
+.build/
+node_modules/
+*.iml
+public/components
+.vscode/
+log/
+npm-debug.log
