@@ -10,24 +10,12 @@
 }
 
 .detail-container {
-    width: 245px;
-    height: 147px;
-    padding: 14px;
     font-size: 13px;
     font-family: arial;
-    background: #fff;
-    border-radius: 2px;
-    display: inline-block;
-    box-shadow: 0 0px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
  
- .detail  {
-     float:left;
-     margin: 1px;
- }
- 
  .detail-item  {
-    padding: 5px;
+     
  }
  
  .detail-header  {

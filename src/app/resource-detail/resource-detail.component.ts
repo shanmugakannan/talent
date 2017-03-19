@@ -9,14 +9,11 @@ export class ResourceDetailComponent implements OnInit {
 LastName : string;
 firstName: string;
 samId: string;
-empId: number;
+emp_no: number;
 grade: string;
 tenure: string;
   constructor() {
-this.LastName = "Natarajapillai";
-this.firstName = "Shanmugakannan";
-this.samId = "snatarajapillai";
-this.empId = 2754;
+this.emp_no = 2754;
 this.grade = "AWF";
 this.tenure = "1";
    }
