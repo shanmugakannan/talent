@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <div class="grid">
+  <div [@pageState]="pageState" class="grid">
       <table class="table">
         <thead>
         <tr><th *ngFor="let column of columns"> <template [ngIf] = "!column.hide">{{column.header}}</template></th>
@@ -8,8 +8,13 @@
         </thead>
         <tbody *ngFor="let row of getData()">
         <tr>
-          <td *ngFor="let column of columns">
+          <td [class.grid-column-ratingdetail]="column.value == 'emp_name' && isEditMode" *ngFor="let column of columns">
             <template [ngIf]="!column.hide">{{row[column.value]}}</template>
+            <template [ngIf]="column.value == 'emp_name' && isEditMode">
+              <resource-detail></resource-detail>
+              <timeline></timeline>
+              <action-item></action-item>
+              </template>
           </td>
           <td>
             <button class="btn btn-primary" (click)="OnratebtnClick(row['corp_id'])">Rate</button>
