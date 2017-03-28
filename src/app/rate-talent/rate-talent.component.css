@@ -1,0 +1,13 @@
+.rate-component-container {
+   height: 185px
+}
+.columnwise {
+    float:left;   
+    margin:5px;
+    margin-left: 5px
+}
+.rowwise {
+    width:300px; 
+    height:100px; 
+    margin:5px;
+}

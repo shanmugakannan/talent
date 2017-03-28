@@ -1,0 +1,26 @@
+<div class="grid-container">
+  <div [@pageState]="pageState" class="grid">
+      <table class="table">
+        <thead>
+        <tr><th *ngFor="let column of columns"> <ng-template [ngIf] = "!column.hide">{{column.header}}</ng-template></th>
+        <th>Rate</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let row of getData()">
+        <tr>
+          <td [class.grid-column-ratingdetail]="column.value == 'emp_name' && isEditMode" *ngFor="let column of columns">
+            <ng-template [ngIf]="!column.hide">{{row[column.value]}}</ng-template>
+            <ng-template [ngIf]="column.value == 'emp_name' && isEditMode">
+              <resource-detail></resource-detail>
+              <timeline></timeline>
+              <action-item></action-item>
+              </ng-template>
+          </td>
+          <td>
+            <button class="btn btn-primary" (click)="OnratebtnClick(row['corp_id'])">Rate</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
